@@ -1,22 +1,39 @@
-.row {
 
+.row {
+	display: flex;
+	width: 200px;
+	padding: 0.5px;
+	
 }
 
 .btn {
+	
 	width: 48px;
 	height: 48px;
+	background: gold ;
+	color: white;
+	border-radius: 4px;
+	margin: auto;
+	text-align:center;
+	vertical-align:middle;
+	line-height: 48px;
+	cursor: pointer;
 
 }
 
 .btn:active {
-	
+	background: orange;
+	cursor: pointer;
 }
 
 .result {
-
+	width: 100%;
+	padding: 5px 1px;
 }
 
 .result:disabled {
+	width: 100%;
+	padding: 5px 1px;
 	background-color: white;
 	border: solid 1px #ffe100;
 	font-size: 14px;
