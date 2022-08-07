@@ -2,7 +2,7 @@ const btns = document.querySelectorAll(".btns li");
 const articles = document.querySelectorAll("section article");
 
 // 버튼의 개수만큼 반복, 해당 요소 이벤트 등록
-console.log(typeof  btns)
+console.log(btns.length)
 for(let i in btns ){
     // 각 버튼 클릭
     btns[i].addEventListener("click", (e) => {
@@ -25,4 +25,8 @@ for(let i in btns ){
         
         
     });
+    
+    if(i  == btns.length -1){
+        break;
+    }
 };
